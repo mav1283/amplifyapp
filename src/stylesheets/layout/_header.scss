@@ -1,0 +1,25 @@
+.App-header {
+  background-color: #282c34;
+  @include grid-container(1em);
+  @include uniform-sides-padded-container(1em);
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  .logo {
+    @extend .flex;
+    .logo-icon {
+      height: 7vmin;
+      pointer-events: none;
+      margin: 0;
+      padding: 0;
+    }
+    .logo-text {
+      text-align: left;
+      text-transform: uppercase;
+    }
+  }
+  .cta {
+    @extend .flex-centered;
+  }
+}

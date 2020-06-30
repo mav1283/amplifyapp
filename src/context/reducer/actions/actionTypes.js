@@ -1,0 +1,4 @@
+const SET_LIST = 'SET_LIST';
+const SET_FORM_DATA = 'SET_FORM_DATA';
+
+export { SET_LIST, SET_FORM_DATA };

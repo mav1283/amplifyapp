@@ -1,0 +1,42 @@
+.flex {
+  display: flex;
+}
+
+.flex-centered {
+  @extend .flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-small {
+  font-size: 0.75rem !important;
+}
+
+.dark-contrast {
+  background: var(--trans-dark-3);
+}
+
+.light-contrast {
+  background: var(--trans-light-3);
+}
+
+.button-details {
+  position: relative;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+  &::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: var(--trans-dark-1);
+    opacity: 0;
+  }
+  &:hover {
+    &::before {
+      opacity: 1;
+    }
+  }
+}

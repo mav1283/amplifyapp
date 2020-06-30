@@ -1,0 +1,10 @@
+.form-area {
+  background: #fbfbfb;
+  @extend .flex-centered;
+  @include uniform-sides-padded-container(1em);
+  align-items: start;
+  height: auto;
+  form {
+    @include grid-container(1em);
+  }
+}

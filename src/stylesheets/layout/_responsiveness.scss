@@ -1,0 +1,51 @@
+/* Media Queries */
+
+@media screen and (min-width: 0px) {
+  .App-header,
+  .App-body {
+    grid-template-columns: 1fr;
+    .form-area {
+      grid-template-columns: 1fr;
+      grid-column-start: 1;
+      grid-row-start: 1;
+    }
+    .list-area {
+      grid-column: 1;
+      grid-row-start: 2;
+    }
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .App-header {
+    grid-template-columns: 1fr auto;
+  }
+  .App-body {
+    .form-area {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .App-body {
+    grid-template-columns: repeat(12, 1fr);
+    .form-area {
+      grid-template-columns: 1fr;
+      grid-column-start: 1;
+      grid-column-end: 4;
+      grid-row-start: 1;
+    }
+    .list-area {
+      grid-column-start: 4;
+      grid-column-end: -1;
+      grid-row-start: 1;
+    }
+  }
+}
+
+@media screen and (min-width: 769px) {
+}
+
+@media screen and (min-width: 800px) {
+}

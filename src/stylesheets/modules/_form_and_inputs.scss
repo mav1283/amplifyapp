@@ -1,0 +1,30 @@
+form {
+  width: 100%;
+}
+input,
+button {
+  min-width: 10%;
+  @include two-sides-padded-container(0.5em, 1em);
+  @include bordered-container(1px, solid, var(--trans-dark-3));
+  @include border-radius(4px);
+}
+
+button {
+  @include button-details;
+}
+
+.btn-danger {
+  @include button-color(var(--pomegranate), #fff);
+}
+
+.btn-warning {
+  @include button-color(var(--pumpkin), #fff);
+}
+
+.btn-success {
+  @include button-color(var(--green-sea), #fff);
+}
+
+.btn-primary {
+  @include button-color(var(--peter-river), #fff);
+}
